@@ -1,0 +1,14 @@
+@import "../common/logo";
+@import "./main-nav";
+.page-header {
+  border-bottom: 1px solid #ececec;
+  // .container {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
+}
+
+.logo-header {
+  color: $primary-text-color;
+}

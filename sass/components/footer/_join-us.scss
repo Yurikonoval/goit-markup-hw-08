@@ -1,0 +1,20 @@
+.join-us {
+  & .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms $cubic;
+  }
+  & .icon {
+    fill: $white-color;
+  }
+  & .link:hover,
+  & .link:focus {
+    background-color: $accent-color;
+  }
+}

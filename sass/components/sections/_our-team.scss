@@ -1,0 +1,84 @@
+.our-team-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: $our-team-section-background;
+
+  & .section-title {
+    @extend %section-title;
+  }
+}
+.our-team {
+  // display: flex;
+  // justify-content: space-between;
+
+  & > .item {
+    // width: calc((100% - 90px) / 4);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+  & .photo {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  & .card-content {
+    padding: 30px 32px;
+
+    background-color: $white-color;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  & .title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+  & .text {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    color: $secondary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+  }
+}
+.social-network {
+  display: flex;
+
+  & .icon {
+    width: 20px;
+    height: 20px;
+  }
+  & .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms $cubic;
+  }
+  & .item + .item {
+    margin-left: 10px;
+  }
+  & .icon {
+    fill: $svg-grey;
+    transition: fill 250ms $cubic;
+  }
+  & .link:hover,
+  & .link:focus {
+    background-color: $accent-color;
+  }
+  & .link:hover .icon,
+  & .link:focus .icon {
+    fill: $white-color;
+  }
+}

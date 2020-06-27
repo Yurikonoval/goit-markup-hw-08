@@ -1,0 +1,28 @@
+.main-address {
+  margin-right: 83px;
+
+  & .address {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  & .link[href="mailto:info@example.com"] {
+    margin-bottom: 9px;
+  }
+  & .address .link {
+    color: inherit;
+    display: block;
+  }
+  & .logo.link {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  & .logo-footer,
+  & .address.phisical {
+    margin-bottom: 9px;
+
+    color: $white-color;
+  }
+}
