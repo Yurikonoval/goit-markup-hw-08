@@ -19,7 +19,11 @@
   background-position: center;
 
   &-container {
-    width: 646px;
+    width: 360px;
+    @media screen and (min-width: $desktop) {
+      width: 646px;
+    }
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -34,6 +38,11 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width: $desktop - 1) {
+      font-size: 26px;
+      line-height: 1.62;
+    }
   }
 }
 .button {

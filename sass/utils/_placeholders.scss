@@ -1,7 +1,9 @@
 %header-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: inline-block;
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 %button {
   display: inline-block;
@@ -34,10 +36,17 @@
 }
 %section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

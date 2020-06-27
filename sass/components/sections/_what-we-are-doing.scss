@@ -1,4 +1,7 @@
 .doing-section {
+  @media screen and (max-width: $desktop - 1) {
+    display: none;
+  }
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -8,8 +11,8 @@
 }
 .we-are-doing {
   &.list {
-    // display: flex;
-    // justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
   & .item-thumb {
     position: relative;
@@ -34,7 +37,7 @@
   }
 
   & > .item {
-    // width: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
     border: 1px solid transparent;
   }
 }
