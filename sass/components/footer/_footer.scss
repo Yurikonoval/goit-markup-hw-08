@@ -1,24 +1,30 @@
 @import "./main-address";
 @import "./join-us";
 @import "./subscribe";
-@import "./copyright";
 
 .page-footer {
   background-color: $footer-background;
 
   & > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     // display: flex;
     align-items: baseline;
-    padding-top: 48px;
-    padding-bottom: 28px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
   & .footer-title {
     margin-bottom: 20px;
 
-    display: inline-block;
+    display: block;
+    text-align: center;
     color: $white-color;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+  .contacts-box {
+    display: flex;
+    justify-content: space-around;
   }
 }

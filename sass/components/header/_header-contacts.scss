@@ -1,18 +1,32 @@
 .header-contacts {
-  // display: flex;
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-left: 84px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 305px;
+  }
   & .item:not(:last-child) {
     @media screen and (max-width: $tablet - 1) {
       margin-bottom: 16px;
     }
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      margin-bottom: 10px;
+    }
   }
 
   & .link {
-    @extend %header-link;
-
-    // display: flex;
-    // align-items: center;
-
     color: $secondary-text-color;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
   }
 }
 .contacts {
@@ -28,9 +42,23 @@
     fill: $accent-color;
   }
 }
-// .header-contacts .item + .item {
-//   margin-left: 30px;
-// }
+@media screen and (min-width: $desktop) {
+  .header-contacts .item + .item {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+  .envelope {
+    width: 14px;
+    height: 10px;
+  }
+  .smartphone {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .envelope,
 .smartphone {
   margin-right: 10px;
@@ -38,4 +66,8 @@
   fill: $secondary-text-color;
 
   transition: fill 250ms $cubic;
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-right: 8px;
+  }
 }

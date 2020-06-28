@@ -3,14 +3,16 @@
 .page-header {
   border-bottom: 1px solid #ececec;
   position: relative;
-  // .container {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-  & .item {
-    @media screen and (max-width: $tablet - 1) {
-      text-align: center;
+  @media screen and (min-width: $tablet) {
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    & .item {
+      @media screen and (max-width: $tablet - 1) {
+        text-align: center;
+      }
     }
   }
 }
@@ -24,6 +26,12 @@
     justify-content: space-between;
     align-items: center;
     min-height: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-right: 81px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 85px;
   }
 }
 .nav-button {
@@ -64,5 +72,10 @@
     &.is-open {
       display: block;
     }
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
