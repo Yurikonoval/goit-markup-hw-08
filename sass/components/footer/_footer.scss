@@ -9,22 +9,32 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // display: flex;
     align-items: baseline;
+    @media screen and (min-width: $desktop) {
+      display: flex;
+    }
   }
   & .footer-title {
     margin-bottom: 20px;
 
     display: block;
-    text-align: center;
+
     color: $white-color;
     font-weight: 700;
     text-transform: uppercase;
+    @media screen and (max-width: $desktop - 1) {
+      text-align: center;
+    }
   }
 }
-@media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
-  .contacts-box {
+
+.contacts-box {
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     display: flex;
     justify-content: space-around;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
   }
 }

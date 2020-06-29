@@ -1,5 +1,8 @@
 .join-us {
-  margin-bottom: 60px;
+  @media screen and (max-width: $desktop) {
+    margin-bottom: 60px;
+  }
+
   & .link {
     display: flex;
     justify-content: center;

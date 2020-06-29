@@ -14,38 +14,55 @@
   <body>
     <header class="page-header">
       <div class="container header">
-        <nav class="main-nav">
+        <div class="header-logo">
           <a href="./index.html" class="logo link"
             >Web <span class="logo-header">Studio</span></a
           >
-          <ul class="nav list">
+          <button type="button" class="nav-button" data-menu-button>
+            <svg
+              class="icon"
+              width="40"
+              height="40"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+              <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container" id="menu-container">
+          <nav class="main-nav">
+            <ul class="nav list">
+              <li class="item">
+                <a class="link" href="./index.html">Студия</a>
+              </li>
+              <li class="item curent">
+                <a class="link curent" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="item"><a class="link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header-contacts list">
             <li class="item">
-              <a class="link" href="./index.html">Студия</a>
+              <a class="contacts link" href="mailto:info@devstudio.com">
+                <svg class="icon envelope" width="16" height="12">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="item curent">
-              <a class="link curent" href="./portfolio.html">Портфолио</a>
+            <li class="item">
+              <a class="contacts link" href="tel:+380961111111"
+                ><svg class="icon smartphone" width="10" height="15">
+                  <use href="./images/sprite.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="header-contacts list">
-          <li class="item">
-            <a class="contacts link" href="mailto:info@devstudio.com">
-              <svg class="icon envelope" width="16" height="12">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item">
-            <a class="contacts link" href="tel:+380961111111"
-              ><svg class="icon smartphone" width="10" height="15">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -286,50 +303,54 @@
     <!-- footer -->
     <footer class="page-footer">
       <div class="container">
-        <div class="main-address">
-          <a href="./index.html" class="logo link"
-            >Web <span class="logo-footer">Studio</span></a
-          >
-          <address class="address phisical">
-            г. Киев, пр-т Леси Украинки, 26
-          </address>
-          <address class="address">
-            <a class="link" href="mailto:info@example.com">info@example.com</a>
-            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
-          </address>
-        </div>
-        <div class="join-us">
-          <b class="footer-title">присоединяйтесь</b>
-          <ul class="list social-network">
-            <li class="item">
-              <a class="link" href="" aria-label="ссылка на Instagram">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="" aria-label="ссылка на Twitter">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="" aria-label="ссылка на Facebook">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="item">
-              <a class="link" href="" aria-label="ссылка на LinkedIn">
-                <svg class="icon">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="contacts-box">
+          <div class="main-address">
+            <a href="./index.html" class="logo link"
+              >Web <span class="logo-footer">Studio</span></a
+            >
+            <address class="address phisical">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <address class="address">
+              <a class="link" href="mailto:info@example.com"
+                >info@example.com</a
+              >
+              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
+          </div>
+          <div class="join-us">
+            <b class="footer-title">присоединяйтесь</b>
+            <ul class="list social-network">
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на Instagram">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на Twitter">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на Facebook">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item">
+                <a class="link" href="" aria-label="ссылка на LinkedIn">
+                  <svg class="icon">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subscribe">
           <b class="footer-title">Подпишитесь на рассылку</b>
@@ -353,8 +374,6 @@
           </div>
         </div>
       </div>
-
-      <p class="copyright">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

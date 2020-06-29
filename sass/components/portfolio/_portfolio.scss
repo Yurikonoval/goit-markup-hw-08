@@ -1,23 +1,23 @@
 @import "./filter-nav";
 .portfolio {
-  padding-top: 93px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    & .item:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
 
   & .section-title {
     @extend %hidden;
   }
   & .item {
-    // /
     margin-bottom: 30px;
   }
-  & .item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
-  & .list {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-  }
+
   & .image {
     position: relative;
     overflow: hidden;
@@ -85,5 +85,26 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .portfolio .item {
+    width: calc((100% - 30px) / 2);
+  }
+  .portfolio .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .portfolio-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .portfolio .item {
+    width: calc((100% - 60px) / 3);
   }
 }
