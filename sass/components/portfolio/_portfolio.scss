@@ -87,6 +87,16 @@
     line-height: 1.87;
   }
 }
+.portfolio .image {
+  height: 294px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
 @media screen and (min-width: $tablet) {
   .portfolio .item {
     width: calc((100% - 30px) / 2);

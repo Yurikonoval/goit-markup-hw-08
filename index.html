@@ -137,6 +137,7 @@
             <li class="item">
               <div class="item-thumb">
                 <img
+                  srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
                   src="./images/laptop.jpg"
                   alt="ноутбук"
                   width="370"
@@ -148,6 +149,10 @@
             <li class="item">
               <div class="item-thumb">
                 <img
+                  srcset="
+                    ./images/mobile-phone.jpg    1x,
+                    ./images/mobile-phone@2x.jpg 2x
+                  "
                   src="./images/mobile-phone.jpg"
                   alt="мобильный телефон"
                   width="370"
@@ -159,6 +164,7 @@
             <li class="item">
               <div class="item-thumb">
                 <img
+                  srcset="./images/design.jpg 1x, ./images/design@2x.jpg 2x"
                   src="./images/design.jpg"
                   alt="дизайн на экране"
                   width="370"
@@ -176,13 +182,18 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team list">
             <li class="item">
-              <img
-                class="photo"
-                src="./images/smith-photo.jpg"
-                alt="Фото Джона Смита"
-                width="278"
-                height="260"
-              />
+              <div class="team-member-box">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/kucher-photo.jpg    1x,
+                    ./images/kucher-photo@2x.jpg 2x
+                  "
+                  src="./images/kucher-photo.jpg"
+                  alt="Фото Николая Кучеренко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                />
+              </div>
               <div class="card-content">
                 <h3 class="title">Николай Кучеренко</h3>
                 <p class="text">Product Designer</p>
@@ -219,13 +230,18 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/stewart-photo.jpg"
-                alt="фото Марты Стюарт"
-                width="278"
-                height="260"
-              />
+              <div class="team-member-box">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/ivanova-photo.jpg    1x,
+                    ./images/ivanova-photo@2x.jpg 2x
+                  "
+                  src="./images/ivanova-photo.jpg"
+                  alt="фото Ольги Ивановой"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                />
+              </div>
               <div class="card-content">
                 <h3 class="title">Ольга Иванова</h3>
                 <p class="text">Frontend Developer</p>
@@ -262,13 +278,18 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/jakis-photo.jpg"
-                alt="фото Марты Стюарт"
-                width="278"
-                height="260"
-              />
+              <div class="team-member-box">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/shevchenko-photo.jpg    1x,
+                    ./images/shevchenko-photo@2x.jpg 2x
+                  "
+                  src="./images/shevchenko-photo.jpg"
+                  alt="фото Андрея Шевченко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                />
+              </div>
               <div class="card-content">
                 <h3 class="title">Андрей Шевченко</h3>
                 <p class="text">Marketing</p>
@@ -305,13 +326,18 @@
               </div>
             </li>
             <li class="item">
-              <img
-                class="photo"
-                src="./images/doe-photo.jpg"
-                alt="фото Марты Стюарт"
-                width="278"
-                height="260"
-              />
+              <div class="team-member-box">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/nikolaev-photo.jpg    1x,
+                    ./images/nikolaev-photo@2x.jpg 2x
+                  "
+                  src="./images/nikolaev-photo.jpg"
+                  alt="фото Ивана Николаева"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw "
+                />
+              </div>
               <div class="card-content">
                 <h3 class="title">Иван Николаев</h3>
                 <p class="text">UI Designer</p>
@@ -540,8 +566,10 @@
             /><svg class="agreement-icon" width="15" height="15">
               <use href="./images/sprite.svg#icon-check"></use>
             </svg>
-            Соглашаюсь с рассылкой и принимаю
-            <a class="contract-terms" href=""> Условия договора</a></label
+            <div>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="contract-terms" href=""> Условия договора</a>
+            </div></label
           >
 
           <button class="form-submit button" type="submit">Отправить</button>
